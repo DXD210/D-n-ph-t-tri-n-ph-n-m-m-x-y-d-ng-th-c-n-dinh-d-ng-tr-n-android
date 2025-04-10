@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dailyMealFragment">
+
+    <fragment
+        android:id="@+id/dailyMealFragment"
+        android:name="com.example.nutritionapp.fragments.DailyMealFragment"
+        android:label="Daily Meals"
+        tools:layout="@layout/fragment_daily_meal">
+        <action
+            android:id="@+id/action_dailyMealFragment_to_mealDetailActivity"
+            app:destination="@id/mealDetailActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nutritionPlanFragment"
+        android:name="com.example.nutritionapp.fragments.NutritionPlanFragment"
+        android:label="Nutrition Plans"
+        tools:layout="@layout/fragment_nutrition_plan">
+        <action
+            android:id="@+id/action_nutritionPlanFragment_to_mealDetailActivity"
+            app:destination="@id/mealDetailActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.nutritionapp.fragments.FavoritesFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favorites">
+        <action
+            android:id="@+id/action_favoritesFragment_to_mealDetailActivity"
+            app:destination="@id/mealDetailActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.nutritionapp.fragments.NotesFragment"
+        android:label="Notes"
+        tools:layout="@layout/fragment_notes" />
+
+    <activity
+        android:id="@+id/mealDetailActivity"
+        android:name="com.example.nutritionapp.activities.MealDetailActivity"
+        android:label="Meal Details"
+        tools:layout="@layout/activity_meal_detail">
+        <argument
+            android:name="mealId"
+            app:argType="long" />
+    </activity>
+
+</navigation>

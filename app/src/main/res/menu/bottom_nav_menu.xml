@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dailyMealFragment"
+        android:icon="@drawable/ic_daily_meal"
+        android:title="Daily Meals" />
+    <item
+        android:id="@+id/nutritionPlanFragment"
+        android:icon="@drawable/ic_nutrition_plan"
+        android:title="Nutrition Plans" />
+    <item
+        android:id="@+id/favoritesFragment"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favorites" />
+    <item
+        android:id="@+id/notesFragment"
+        android:icon="@drawable/ic_note"
+        android:title="Notes" />
+</menu>
